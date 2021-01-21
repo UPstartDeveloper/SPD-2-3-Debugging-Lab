@@ -10,6 +10,23 @@ Exercise 3
 # - What line number is causing the error?
 # - What can you deduce about the cause of the error?
 
+"""
+Here is the error message we got from the stack trace:
+
+Traceback (most recent call last):
+  File "exercise-3.py", line 34, in <module>
+    answer = insertion_sort([5, 2, 3, 1, 6])
+  File "exercise-3.py", line 26, in insertion_sort
+    while key < arr[j] : 
+IndexError: list index out of range
+
+We expect a sorted list but instead there is an IndexError on line 26, 
+in the while loop condition. So we need to figure out what causes j to 
+go beyond the bounds of the array.
+
+
+"""
+
 
 # PART 2: State Assumptions
 #

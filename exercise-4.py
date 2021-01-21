@@ -10,6 +10,20 @@ Exercise 4
 # - What line number is causing the error?
 # - What can you deduce about the cause of the error?
 
+"""
+Here is the error message from the stack trace:
+  File "exercise-4.py", line 22
+    if high == None:
+                   ^
+IndentationError: unindent does not match any outer indentation level
+
+We expected to return the index at which a given element is in an array, however 
+there is an IndentationError on line 22, where we check whether high is None.
+So we need to figure out which column we should actually start this line 
+(or some line above it) in the function body.
+
+"""
+
 
 # PART 2: State Assumptions
 #

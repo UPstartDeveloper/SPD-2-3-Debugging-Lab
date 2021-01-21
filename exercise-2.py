@@ -9,7 +9,15 @@ Exercise 2
 # - What error message (if any) is there?
 # - What line number is causing the error?
 # - What can you deduce about the cause of the error?
+"""
+There is a logical error when running the function on the second input list.
+We expected to see True, yet the function returned False.
+There is no error message.
+The error is on line 31-32, where the else clause returns False. 
+So we need to figure out why it doesn't return True, even though there is 
+a part of the list that meets the True condition.
 
+"""
 
 # PART 2: State Assumptions
 #

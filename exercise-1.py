@@ -9,6 +9,20 @@ Exercise 1
 # - What error message (if any) is there?
 # - What line number is causing the error?
 # - What can you deduce about the cause of the error?
+"""
+Here is the stack trace we got from the running program:
+# Traceback (most recent call last):
+#   File "exercise-1.py", line 31, in <module>
+#     answer = find_largest_diff([5, 3, 1, 2, 6, 4])
+#   File "exercise-1.py", line 23, in find_largest_diff
+#     diff = abs(list_of_nums[i] - list_of_nums[i+1])
+# IndexError: list index out of range
+
+There is an IndexError on line 31 because on the last iteration of the for loop 
+because we index outside the bounds of the list_of_nums. We expected to find just
+the largest difference between consecutive numbers. This means we need to find out 
+why i has a value that's greater than or equal to the length of the list.
+"""
 
 
 # PART 2: State Assumptions
