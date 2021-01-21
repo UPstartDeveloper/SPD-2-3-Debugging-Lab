@@ -21,8 +21,16 @@ a part of the list that meets the True condition.
 
 # PART 2: State Assumptions
 #
-# TODO: State your assumptions here or say them out loud to your partner ...
+# State your assumptions here or say them out loud to your partner ...
 # Make sure to be SPECIFIC about what each of your assumptions is!
+
+"""
+ok, so for some reason the second example returns False when it should be True.
+But it totally meets the condition!
+Is the function logic not able to understand the numbers somehow?
+Oh wait, you need to wait until the for loop is completely done before 
+returning False.
+"""
 
 def contains_3_consecutive(list_of_nums):
     """Return True if the list contains 3 consecutive numbers each increasing by 1."""

@@ -4,7 +4,7 @@ Exercise 4
 
 # PART 1: Gather Information
 #
-# TODO: Gather information about the source of the error and paste your findings here. E.g.:
+# Gather information about the source of the error and paste your findings here. E.g.:
 # - What is the expected vs. the actual output?
 # - What error message (if any) is there?
 # - What line number is causing the error?
@@ -27,9 +27,25 @@ So we need to figure out which column we should actually start this line
 
 # PART 2: State Assumptions
 #
-# TODO: State your assumptions here or say them out loud to your partner ...
+# State your assumptions here or say them out loud to your partner ...
 # Make sure to be SPECIFIC about what each of your assumptions is!
 # HINT: It may help to draw a picture to clarify what your assumptions are.
+
+"""
+Hmm, so why isn't it working?
+The logic is fairly accurate - if the value at the middle is too smaller, 
+go right;
+and when it's larger, go left.
+
+Maybe we need hit the base case?
+Hmm, maybe print out the values of low, mid, and high?
+Oh I see! So we assumed that high < low eventually, 
+or we find the element.
+
+However, we forgot to consider that we're including elements that have already
+been checked when we recurse - so we need to increment/decrement the middle 
+index when we call the function recursively. 
+"""
 
 def binary_search(arr, element, low=0, high=None):
     """Returns the index of the given element within the array by performing a binary search."""

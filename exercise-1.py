@@ -4,7 +4,7 @@ Exercise 1
 
 # PART 1: Gather Information
 #
-# TODO: Gather information about the source of the error and paste your findings here. E.g.:
+# Gather information about the source of the error and paste your findings here. E.g.:
 # - What is the expected vs. the actual output?
 # - What error message (if any) is there?
 # - What line number is causing the error?
@@ -27,8 +27,15 @@ why i has a value that's greater than or equal to the length of the list.
 
 # PART 2: State Assumptions
 #
-# TODO: State your assumptions here or say them out loud to your partner ...
+# State your assumptions here or say them out loud to your partner ...
 # Make sure to be SPECIFIC about what each of your assumptions is!
+
+"""
+"hmm, so why is it i or i + 1 going out of bounds?
+oh, I see. We should set the for loop to go 1 less than the length of 
+the array, because then i will then stop at len(list_of_nums) - 2, 
+and therefore i + 1 will stay within the array bounds."
+"""
 
 def find_largest_diff(list_of_nums):
     """Find the largest difference between *consecutive* numbers in a list."""

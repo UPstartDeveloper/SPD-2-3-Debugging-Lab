@@ -4,7 +4,7 @@ Exercise 3
 
 # PART 1: Gather Information
 #
-# TODO: Gather information about the source of the error and paste your findings here. E.g.:
+# Gather information about the source of the error and paste your findings here. E.g.:
 # - What is the expected vs. the actual output?
 # - What error message (if any) is there?
 # - What line number is causing the error?
@@ -30,9 +30,16 @@ go beyond the bounds of the array.
 
 # PART 2: State Assumptions
 #
-# TODO: State your assumptions here or say them out loud to your partner ...
+# State your assumptions here or say them out loud to your partner ...
 # Make sure to be SPECIFIC about what each of your assumptions is!
 # HINT: It may help to draw a picture to clarify what your assumptions are.
+
+"""
+So isn't the while loop supposed to stop when j makes it to the start 
+of the array? Because that's where the "sorted" portion of the the list is.
+Oh wait a second, Python allows negative list indexing - so we need to explictly 
+tell the while loop to stop when j < 0.
+"""
 
 def insertion_sort(arr):
     """Performs an Insertion Sort on the array arr."""
