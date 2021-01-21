@@ -32,7 +32,7 @@ So we need to figure out which column we should actually start this line
 # HINT: It may help to draw a picture to clarify what your assumptions are.
 
 def binary_search(arr, element, low=0, high=None):
-      """Returns the index of the given element within the array by performing a binary search."""
+    """Returns the index of the given element within the array by performing a binary search."""
     if high == None:
         high = len(arr) - 1
 
@@ -45,10 +45,10 @@ def binary_search(arr, element, low=0, high=None):
         return mid
 
     elif arr[mid] > element:
-        return binary_search(arr, element, low, mid)
+        return binary_search(arr, element, low, mid - 1)
 
     else: 
-        return binary_search(arr, element, mid, high)
+        return binary_search(arr, element, mid + 1, high)
 
 
 if __name__ == '__main__':
